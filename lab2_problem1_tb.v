@@ -1,3 +1,4 @@
+//In the labtest you will have to do everything in on file (code + testbench) 
 `include "lab2_problem1.v"
 module testbench_problem1 ;
 reg A,B,C;

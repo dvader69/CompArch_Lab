@@ -7,7 +7,7 @@ decoder3_8 m1 (A,B,C, decoder);
 
 assign sum= decoder[1]||decoder[2]||decoder[4]||decoder[7];
 assign cout= decoder[3]||decoder[5]||decoder[6]||decoder[7];
-endmodule 
+endmodule // If you wan to do bitwise or use | , but here all statements are only 1 bit so || also works
 
 
 module decoder3_8( 

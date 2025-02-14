@@ -11,28 +11,46 @@ initial begin
 end
 
 always #5 clk=~clk;
-initial
-    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
+//initial
+ //   $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
 initial begin 
     reset=1;
-    #10 reset=0; in_seq=0;
+    #5 reset=0; in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=0;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
     #10 in_seq=1;
+    $monitor(,$time, "input=%b,reset=%b,state=%b, output=%b",in_seq,reset,state_reg,detector_out);
 
     $finish;
 end
